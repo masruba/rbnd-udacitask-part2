@@ -1,13 +1,27 @@
 # What you added to Udacitask 2.0
 # -------------------------------------------------------
 1. What is the gem of your choice and how did you use it?
+
+- Used artii gem to use ASCII art to print out the title of the list
+
 2. Describe the 2 features you added to the project.
   a) Feature 1...
+
+Allow deletion of multiple items
+
   b) Feature 2...
+Feature to upgrade or downgrade priority level
 
 # REFLECTIONS
 # -------------------------------------------------------
 1. How long did you spend working on this project?
+Two hours
+
 2. What was the most rewarding challenge you conquered?
+n/a. I have previous experience working with Object Oriented experience. Hence, it was straightforward to finish this project
+
 3. What two additional features did you build? Why?
+Automatically Adjust the level of the feature
+
 4. Where do you still have room to grow?
+- Creating a progress bar

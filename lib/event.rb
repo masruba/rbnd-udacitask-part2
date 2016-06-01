@@ -11,4 +11,11 @@ class EventItem
   def details
     format_description(description) + "event dates: " + format_date(start_date: @start_date, end_date: @end_date)
   end
+
+  def details_table_format
+    table_data = {:description => @description}
+    table_data[:start_date] = @start_date if @start_date
+    table_data[:end_date] = @end_date if @end_date
+    Formatador.display_table([table_data])
+  end  
 end

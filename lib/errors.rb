@@ -6,4 +6,7 @@ module UdaciListErrors
   end
   class InvalidPriorityValue < StandardError
   end
+  # Feature 2: Invalid Index Error Class
+  class InvalidIndex < StandardError
+  end
 end

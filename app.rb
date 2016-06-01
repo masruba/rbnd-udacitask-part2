@@ -1,6 +1,9 @@
 require 'chronic'
 require 'colorize'
 # Find a third gem of your choice and add it to your project
+require 'artii'
+require 'formatador'
+
 require 'date'
 require_relative "lib/listable"
 require_relative "lib/errors"
