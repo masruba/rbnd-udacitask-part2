@@ -3,9 +3,20 @@ class TodoItem
   attr_reader :description, :due, :priority
 
   def initialize(description, options={})
+    if options[:priority]
+      if ['high', 'medium', 'low'].include? options[:priority] 
+        @priority = options[:priority]
+      else
+        raise UdaciListErrors::InvalidPriorityValue, "Priority value is invalid!"
+      end
+    end
     @description = description
-    @due = options[:due] ? Date.parse(options[:due]) : options[:due]
-    @priority = options[:priority]
+    @due = options[:due]
+    if @due
+      parse_time = Chronic.parse(options[:due])
+      @due = Date.parse(parse_time.to_s)
+    end
+    
   end
 
   def details
