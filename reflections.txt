@@ -5,12 +5,11 @@
 - Used artii gem to use ASCII art to print out the title of the list
 - Used formatador gem to print the event details in table format
 Example:
- +-------------------+------------+----------+
-  | description       | due        | priority |
-  +-------------------+------------+----------+
-  | Buy more dog food | 2016-07-06 | medium   |
-  +-------------------+------------+----------+
-
+  +----------------+-----------+------------+
+  | description    | item_type | start_date |
+  +----------------+-----------+------------+
+  | Birthday Party | Event     | 2017-05-31 |
+  +----------------+-----------+------------+
 
 2. Describe the 2 features you added to the project.
   a) Feature 1: Deletion of multiple items
@@ -24,9 +23,10 @@ Example:
 2-3 hours
 
 2. What was the most rewarding challenge you conquered?
-n/a. Nothing in particular. Using the gems were fun.
+n/a. Nothing in particular. Using gems and module were interesting.
 
 3. What two additional features did you build? Why?
+
 Feature 1
 ----------
 - Deletion of multiple items given their indices
@@ -38,11 +38,11 @@ File: udacilist.rb
 Feature 2
 ----------
 File:  todo.rb
-The priority level can be upgraded to higher level /  downgraded to a lower level. I also handled the corner cases. This feature is useful for changing priority level of items
+The priority level can be upgraded to higher level /  downgraded to a lower level. I also handled the corner cases. This feature is useful for changing priority level of items.
 
 - def upgrade_priority
 - def downgrade_priority
 
 4. Where do you still have room to grow?
-- Using ruby gem for showing the some kind of progress bar
+- Using more ruby gems 
 - Creating additional item type
