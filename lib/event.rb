@@ -4,8 +4,8 @@ class EventItem
 
   def initialize(description, options={})
     @description = description
-    @start_date = Date.parse(options[:start_date]) if options[:start_date]
-    @end_date = Date.parse(options[:end_date]) if options[:end_date]
+    @start_date = Date.parse(Chronic.parse(options[:start_date]).to_s) if options[:start_date]
+    @end_date = Date.parse(Chronic.parse(options[:end_date]).to_s) if options[:end_date]
   end
 
   def details

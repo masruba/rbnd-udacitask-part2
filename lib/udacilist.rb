@@ -24,8 +24,8 @@ class UdaciList
       filter_objects = @items.find_all {|object| object.is_a?(EventItem)} if type == "event" 
       filter_objects = @items.find_all {|object| object.is_a?(LinkItem)}  if type == "link"      
       filter_objects.each do |item|
-        puts item.details
-        #puts item.details_table_format
+        #puts item.details
+        puts item.details_table_format
       end
       filter_objects
     else

@@ -14,6 +14,7 @@ class TodoItem
     @description = description
     @due = options[:due]
     if @due
+      # Use the chronic gem to parse the date
       parse_time = Chronic.parse(options[:due])
       @due = Date.parse(parse_time.to_s)
     end    
