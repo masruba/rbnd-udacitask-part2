@@ -42,4 +42,4 @@ The priority level can be upgraded to higher level /  downgraded to a lower leve
 - def downgrade_priority
 
 4. Where do you still have room to grow?
-- Implementing a gem for showing the progress bar
+- Using a gem for showing the progress bar
