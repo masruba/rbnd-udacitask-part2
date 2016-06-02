@@ -9,8 +9,7 @@ module Listable
   end
 
   def format_date(options={})
-    hash_keys = options.keys
-  	if hash_keys.include?("start_date")
+  	if options.key?(:start_date)
 	  	dates = parse_date(options[:start_date])
       end_date = parse_date(options[:end_date])
 	  	dates << " -- " + end_date if end_date
