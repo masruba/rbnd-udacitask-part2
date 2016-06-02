@@ -3,25 +3,43 @@
 1. What is the gem of your choice and how did you use it?
 
 - Used artii gem to use ASCII art to print out the title of the list
+- Used formatador gem to print the event details in table format
+Example:
+ +-------------------+------------+----------+
+  | description       | due        | priority |
+  +-------------------+------------+----------+
+  | Buy more dog food | 2016-07-06 | medium   |
+  +-------------------+------------+----------+
+
 
 2. Describe the 2 features you added to the project.
-  a) Feature 1...
+  a) Feature 1: Deletion of multiple items
 
-Allow deletion of multiple items
-
-  b) Feature 2...
-Feature to upgrade or downgrade priority level
+  b) Feature 2: Adjusting priority level 
+  - The priority level can be upgraded to higher level /  downgraded to a lower level
 
 # REFLECTIONS
 # -------------------------------------------------------
 1. How long did you spend working on this project?
-Two hours
+2-3 hours
 
 2. What was the most rewarding challenge you conquered?
-n/a. I have previous experience working with Object Oriented experience. Hence, it was straightforward to finish this project
+n/a. I have previous experience working with Object Oriented programming. Incorporating the gems were fun.
 
 3. What two additional features did you build? Why?
-Automatically Adjust the level of the feature
+Feature 1
+----------
+File: udacilist.rb
+Deletion of multiple items given their indices
+- def delete_multiple_items(incides)
+
+Feature 2
+----------
+File:  todo.rb
+The priority level can be upgraded to higher level /  downgraded to a lower level. I also handled the corner cases
+
+- def upgrade_priority
+- def downgrade_priority
 
 4. Where do you still have room to grow?
-- Creating a progress bar
+- Implementing a gem for showing the progress bar
