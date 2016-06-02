@@ -8,6 +8,7 @@ class UdaciList
 
   def add(type, description, options={})
     type = type.downcase
+    # Handle error cases
     if ['todo', 'event', 'link'].include? type
       @items.push TodoItem.new(description, options) if type == "todo"
       @items.push EventItem.new(description, options) if type == "event"
@@ -23,7 +24,7 @@ class UdaciList
       filter_objects = @items.find_all {|object| object.is_a?(EventItem)} if type == "event" 
       filter_objects = @items.find_all {|object| object.is_a?(LinkItem)}  if type == "link"      
       filter_objects.each do |item|
-        puts item.details
+        puts item.details_table_format
       end
     else
       puts "Invalid Item Type!"
@@ -42,14 +43,14 @@ class UdaciList
     end
   end
 
-  def all
+  def all(view_format=0)
     puts "-" * (@title.length*4.5)
     a = Artii::Base.new
     puts a.asciify(@title) 
     puts "-" * (@title.length*4.5)
     @items.each_with_index do |item, position|
-      #puts "#{position + 1}) #{item.details}"
-      puts item.details_table_format
+      puts "#{position + 1}) #{item.details}" if view_format == 0
+      puts item.details_table_format if view_format == 1
     end
   end
 end

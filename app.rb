@@ -43,7 +43,10 @@ new_list.add("link", "http://ruby-doc.org")
 
 # DISPLAY UNTITLED LIST
 # ---------------------
-new_list.all
+new_list.all(0)
+# Uncomment the following line to show the list details in table format
+#new_list.all(1)
+
 
 # DEMO FILTER BY ITEM TYPE
 # ------------------------

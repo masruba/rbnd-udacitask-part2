@@ -1,6 +1,7 @@
 class TodoItem
   include Listable
   attr_reader :description, :due, :priority
+  
   def initialize(description, options={})
     if options[:priority]
       if ['high', 'medium', 'low'].include? options[:priority] 
