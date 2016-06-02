@@ -15,8 +15,8 @@ Example:
 2. Describe the 2 features you added to the project.
   a) Feature 1: Deletion of multiple items
 
-  b) Feature 2: Adjusting priority level 
-  - The priority level can be upgraded to higher level /  downgraded to a lower level
+  b) Feature 2: Set or adjust priority level 
+  - The priority level can be set / upgraded to higher level /  downgraded to a lower level
 
 # REFLECTIONS
 # -------------------------------------------------------
@@ -24,7 +24,7 @@ Example:
 2-3 hours
 
 2. What was the most rewarding challenge you conquered?
-n/a. I have previous experience working with Object Oriented programming. Incorporating the gems were fun.
+n/a. Nothing in particular. Using the gems were fun.
 
 3. What two additional features did you build? Why?
 Feature 1

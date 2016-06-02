@@ -26,6 +26,7 @@ class UdaciList
       filter_objects.each do |item|
         puts item.details_table_format
       end
+      filter_objects
     else
       puts "Invalid Item Type!"
     end
@@ -37,8 +38,12 @@ class UdaciList
   end
 
   # Feature 1: Allow deletion of multiple items
-  def delete_multiple(incides)
-    indices.each do|index| 
+  # 1-indexing
+  def delete_multiple(indices)
+    # delete highest index element first to keep the deletion indices consistent
+    indices.sort! {|i, j| j <=> i}
+    puts indices
+    indices.each do|index|
       delete(index)
     end
   end

@@ -21,10 +21,11 @@ class TodoItem
 
   def details
     format_description(@description) + "due: " +
-    format_date(due: due) +
+    format_date(due: @due) +
     format_priority(@priority)
   end
 
+  # Print details in table format
   def details_table_format
     table_data = {:description => @description}
     table_data[:due] = @due if @due
@@ -32,7 +33,13 @@ class TodoItem
     Formatador.display_table([table_data])
   end  
 
+  # Feature 3: Set Priority
+  def set_priority(priority='low')
+    @priority = priority
+  end
+
   # Feature 3 : Increase the level of Priority
+  # Upgrade the priority level
   def upgrade_priority
     priority_list = ['low', 'medium', 'high']    
     index = priority_list.index(@priority)
