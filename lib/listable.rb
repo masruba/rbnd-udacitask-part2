@@ -4,6 +4,13 @@ module Listable
     "#{description}".ljust(30)
   end
 
+  def get_item_type
+    type = "Event" if self.class == EventItem
+    type = "To-Do" if self.class == TodoItem
+    type = "Link" if self.class == LinkItem
+    type
+  end
+
   def parse_date(input_date)
     input_date.strftime("%D") if input_date
   end

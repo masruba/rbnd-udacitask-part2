@@ -21,6 +21,11 @@ class TodoItem
   end
 
   def details
+    type = get_item_type
+    puts '*'*type.length
+    puts type
+    puts '*'*type.length    
+
     format_description(@description) + "due: " +
     format_date(due: @due) +
     format_priority(@priority)
@@ -28,6 +33,7 @@ class TodoItem
 
   # Print details in table format
   def details_table_format
+    table_data = {:item_type => get_item_type}    
     table_data = {:description => @description}
     table_data[:due] = @due if @due
     table_data[:priority] = @priority if @priority
