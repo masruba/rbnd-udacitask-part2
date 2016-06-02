@@ -43,11 +43,30 @@ new_list.add("link", "http://ruby-doc.org")
 
 # DISPLAY UNTITLED LIST
 # ---------------------
-new_list.all(0)
+new_list.all
 # Uncomment the following line to show the list details in table format
 #new_list.all(1)
 
 
 # DEMO FILTER BY ITEM TYPE
 # ------------------------
-new_list.filter("event")
+#new_list.filter("event")
+#new_list.filter("link")
+#new_list.filter("todo")
+
+
+# Additional Features
+# ------------------------
+
+# Feature 1 - delete multiple indices
+#new_list.delete_multiple([1, 2, 3])
+#new_list.all
+
+# Feature 2 
+# Set/Upgrade/Downgrade Priority
+#todo_list = new_list.filter("todo")
+#todo_list.each do |todo|
+#	print "Before: " + todo.details + "\n"
+#	todo.upgrade_priority
+#	print "After : " + todo.details  + "\n"
+#end
